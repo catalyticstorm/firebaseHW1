@@ -36,14 +36,14 @@ config = {
       });
     });
     database.ref().on("child_added", function(snapshot) {
-      console.log(now.diff(timeTill));
+      console.log(now.diff(theTime));
       console.log(snapshot.val().dest);
       console.log(snapshot.val().flightNo);
       console.log(snapshot.val().origin);
       console.log(snapshot.val().gate);
 	  console.log(snapshot.val().theTime);
   $("tbody").after("<tr>");
-  $("tbody").after("<td>" + now.diff(parseInt(theTime)) + "</td>");
+  $("tbody").after("<td>" + nowDiff(theTime) + "</td>");
   $("tbody").after("<td>" + snapshot.val().theTime + "</td>");
   $("tbody").after("<td>" + snapshot.val().gate + "</td>");
   $("tbody").after("<td>" + snapshot.val().origin + "</td>");
