@@ -43,7 +43,7 @@ config = {
       console.log(snapshot.val().gate);
 	  console.log(snapshot.val().theTime);
   $("tbody").after("<tr>");
-  $("tbody").after("<td>" + nowDiff(theTime) + "</td>");
+  $("tbody").after("<td>" + now.diff(snapshot.val().theTime) + "</td>");
   $("tbody").after("<td>" + snapshot.val().theTime + "</td>");
   $("tbody").after("<td>" + snapshot.val().gate + "</td>");
   $("tbody").after("<td>" + snapshot.val().origin + "</td>");
