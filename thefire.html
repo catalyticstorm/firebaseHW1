@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Etherial Plane</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+	<!-- Jumbotron -->
+	<div class="jumbotron" style="background-color: black; color: white">
+		<h1 class="text-center">I Like Planes Better</h1>
+		<h4 class="text-center">This is the cap'n speaking. If you look to the left, you can't see anything on the right.</h4>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-12">
+	
+		<!-- Current Employees-->
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Arrivals/Departures</strong></h3>
+				</div>
+				<div class="panel-body">
+					<table class="table table-hover" id="employeeTable">
+						<thead>
+							<tr>
+								<th>Destination</th>
+								<th>Fl. #</th>
+								<th>Origin</th>
+								<th>Gate</th>
+								<th>Arrival/Depart Time</th>
+								<th>ETA</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- Add Employee  -->
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Add a Flight</strong></h3>
+				</div>
+				<div class="panel-body">
+	
+
+				<!-- Entry Form -->
+				<form>
+					<div class="form-group">
+						<label for="">Destination</label>
+						<input type="text" class="form-control" id="destInput">
+					</div>
+
+					<div class="form-group">
+						<label for="">Flight Number</label>
+						<input type="text" class="form-control" id="flightNoInput">
+					</div>
+
+					<div class="form-group">
+						<label for="">Origin</label>
+						<input type="text" class="form-control" id="originInput">
+					</div>
+
+					<div class="form-group">
+						<label for="">Gate</label>
+						<input type="text" class="form-control" id="gateInput">
+					</div>
+					
+					<div class="form-group">
+						<label for="">Arrival/Depart Time (HH:MM Military Time)</label>
+						<input type="text" class="form-control" id="timeInput">
+					</div>
+					
+					<button type="submit" class="btn btn-primary" id="addFlight">Submit</button>
+				</form>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- Javascript -->
+<script src="assets/script/thescript.js"></script>
+</body>
+</html>
